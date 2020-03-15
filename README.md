@@ -45,7 +45,7 @@ class KinesisStreamEncryptionType(BaseResourceCheck):
 
 check = KinesisStreamEncryptionType()
 ```
-
+And finally run your new check:
 ```cli
 $ checkov -d . --external-checks-dir checkov/
 ...
