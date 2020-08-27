@@ -78,6 +78,10 @@ module "kinesis" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -87,7 +91,7 @@ module "kinesis" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
 | encryption\_type | n/a | `string` | `"KMS"` | no |
 | kms\_key\_id | n/a | `string` | `"alias/aws/kinesis"` | no |
