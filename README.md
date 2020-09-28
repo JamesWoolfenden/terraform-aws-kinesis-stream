@@ -76,7 +76,6 @@ module "kinesis" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -84,17 +83,17 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name            | Description                                        | Type     | Default                                                                                                                                                                                                            | Required |
-| --------------- | -------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------: |
-| common_tags     | This is to help you add tags to your cloud objects | `map`    | n/a                                                                                                                                                                                                                |   yes    |
-| encryption_type | n/a                                                | `string` | `"KMS"`                                                                                                                                                                                                            |    no    |
-| kms_key_id      | n/a                                                | `string` | `"alias/aws/kinesis"`                                                                                                                                                                                              |    no    |
-| stream          | n/a                                                | `map`    | <pre>{<br> "encryption_typ": "KMS",<br> "name": "terraform-kinesis-test",<br> "retention_period": 48,<br> "shard_count": 1,<br> "shard_level_metrics": [<br> "IncomingBytes",<br> "OutgoingBytes"<br> ]<br>}</pre> |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| encryption\_type | n/a | `string` | `"KMS"` | no |
+| kms\_key\_id | n/a | `string` | `"alias/aws/kinesis"` | no |
+| stream | n/a | `map` | <pre>{<br>  "encryption_typ": "KMS",<br>  "name": "terraform-kinesis-test",<br>  "retention_period": 48,<br>  "shard_count": 1,<br>  "shard_level_metrics": [<br>    "IncomingBytes",<br>    "OutgoingBytes"<br>  ]<br>}</pre> | no |
 
 ## Outputs
 
