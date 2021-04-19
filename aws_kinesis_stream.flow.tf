@@ -1,3 +1,4 @@
+# tfsec:ignore:AWS024
 resource "aws_kinesis_stream" "flow" {
   name             = var.stream["name"]
   shard_count      = var.stream["shard_count"]
