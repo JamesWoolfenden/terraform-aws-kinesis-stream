@@ -136,14 +136,22 @@ resource "aws_iam_policy" "terraform_pike" {
             "Action": [
                 "kinesis:AddTagsToStream",
                 "kinesis:CreateStream",
+                "kinesis:DecreaseStreamRetentionPeriod",
                 "kinesis:DeleteStream",
                 "kinesis:DescribeStreamSummary",
+                "kinesis:DisableEnhancedMonitoring",
                 "kinesis:EnableEnhancedMonitoring",
                 "kinesis:IncreaseStreamRetentionPeriod",
                 "kinesis:ListTagsForStream",
-                "kinesis:RemoveTagsFromStream"
+                "kinesis:RemoveTagsFromStream",
+                "kinesis:StartStreamEncryption",
+                "kinesis:StopStreamEncryption",
+                "kinesis:UpdateShardCount",
+                "kinesis:UpdateStreamMode"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
