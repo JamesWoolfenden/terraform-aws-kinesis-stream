@@ -1,6 +1,6 @@
 # terraform-aws-kinesis-stream
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-kinesis-stream.svg)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-kinesis-stream.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-kinesis-stream/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
@@ -87,8 +87,8 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| ---- | ------- |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.43.0 |
 
 ## Modules
 
@@ -97,17 +97,17 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_kinesis_stream.flow](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kinesis_stream) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_encryption_type"></a> [encryption\_type](#input\_encryption\_type) | n/a | `string` | `"KMS"` | no |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `string` | `"alias/aws/kinesis"` | no |
-| <a name="input_stream"></a> [stream](#input\_stream) | n/a | `map` | <pre>{<br>  "encryption_typ": "KMS",<br>  "name": "terraform-kinesis-test",<br>  "retention_period": 48,<br>  "shard_count": 1,<br>  "shard_level_metrics": [<br>    "IncomingBytes",<br>    "OutgoingBytes"<br>  ]<br>}</pre> | no |
+| <a name="input_stream"></a> [stream](#input\_stream) | n/a | `map` | <pre>{<br/>  "encryption_typ": "KMS",<br/>  "name": "terraform-kinesis-test",<br/>  "retention_period": 48,<br/>  "shard_count": 1,<br/>  "shard_level_metrics": [<br/>    "IncomingBytes",<br/>    "OutgoingBytes"<br/>  ]<br/>}</pre> | no |
 
 ## Outputs
 
